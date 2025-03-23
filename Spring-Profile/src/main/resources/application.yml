@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: spring-profile-app
+  profiles:
+    active: 
+      - prod
+
+# ---------------- Dev Profile ----------------
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+my:
+  config: dev-config-suraj
+
+# ---------------- Test Profile ----------------
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+my:
+  config: test-config-suraj
+
+# ---------------- Prod Profile ----------------
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+my:
+  config: prod-config-suraj
