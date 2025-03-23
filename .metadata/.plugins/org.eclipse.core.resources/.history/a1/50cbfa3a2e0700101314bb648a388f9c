@@ -1,0 +1,18 @@
+package com.suraj.service;
+
+import org.springframework.stereotype.Service;
+
+import com.suraj.dto.UserRequest;
+
+
+
+@Service
+public class UserServiceImpl implements UserService{
+
+	@Override
+	public String login(UserRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

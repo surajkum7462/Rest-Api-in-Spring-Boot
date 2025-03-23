@@ -1,0 +1,4 @@
+spring.application.name=File-Upload-Download-Example
+
+
+file.upload.path=files/

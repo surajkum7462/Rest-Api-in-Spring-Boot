@@ -1,0 +1,5 @@
+package com.suraj.repo;
+
+public class UserRepo {
+
+}

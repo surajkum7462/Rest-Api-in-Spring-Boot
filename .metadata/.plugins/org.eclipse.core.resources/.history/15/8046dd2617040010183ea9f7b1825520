@@ -1,0 +1,70 @@
+package com.suraj.service.impl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ObjectUtils;
+
+import com.suraj.dto.ProductDto;
+import com.suraj.model.Product;
+import com.suraj.repo.ProductRepo;
+import com.suraj.service.ProductService;
+
+public class ProductServiceImpl implements ProductService{
+
+	
+	@Autowired
+	private ProductRepo productRepo;
+	
+	
+	@Autowired
+	private ModelMapper mapper;
+	
+	
+	@Override
+	public Boolean saveProduct(ProductDto productDto) {
+		
+		/* This is complex approach so we use mapper
+		 * Product product = new Product(); product.setId(productDto.getId());
+		 * product.setName(productDto.getName());
+		 * product.setPrice(productDto.getPrice());
+		 * product.setQuantity(productDto.getQuantity());
+		
+        product.setDescription(productDto.getDescription());
+		Product save = productRepo.save(product);  */
+		
+		Product save = mapper.map(productDto, Product.class);	
+		
+		if(!ObjectUtils.isEmpty(save))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+
+	@Override
+	public List<Product> getAllProduct() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product getProductById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean deleteProduct(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

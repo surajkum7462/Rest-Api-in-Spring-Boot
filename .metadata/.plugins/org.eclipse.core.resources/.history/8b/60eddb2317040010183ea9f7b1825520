@@ -1,0 +1,18 @@
+package com.suraj.service;
+
+import java.util.List;
+
+import com.suraj.dto.ProductDto;
+import com.suraj.model.Product;
+
+public interface ProductService {
+	
+	public Boolean saveProduct(ProductDto productDto);
+	
+	public List<ProductDto> getAllProduct();
+	
+	public Product getProductById(Integer id);
+	
+	public Boolean deleteProduct(Integer id);
+
+}

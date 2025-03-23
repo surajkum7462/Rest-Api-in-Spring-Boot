@@ -1,0 +1,5 @@
+spring.application.name=Spring-Security-Tutorial
+
+
+spring.security.user.name=suraj
+spring.security.user.password=1234

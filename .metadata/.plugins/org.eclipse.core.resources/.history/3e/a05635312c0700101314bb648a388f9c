@@ -1,0 +1,5 @@
+package com.suraj.dto;
+
+public class UserRequest {
+
+}
