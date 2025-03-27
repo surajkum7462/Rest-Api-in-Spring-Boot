@@ -1,5 +1,0 @@
-package com.suraj.exception;
-
-public class GlobalExceptionHandler {
-
-}

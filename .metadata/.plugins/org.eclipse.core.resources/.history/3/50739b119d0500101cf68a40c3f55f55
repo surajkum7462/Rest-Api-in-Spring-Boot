@@ -1,8 +1,0 @@
-package com.suraj.service;
-
-public interface FileService {
-	
-	
-	public Boolean uploadFile();
-
-}

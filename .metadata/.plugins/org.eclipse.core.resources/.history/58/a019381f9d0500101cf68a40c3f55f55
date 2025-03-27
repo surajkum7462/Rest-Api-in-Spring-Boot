@@ -1,7 +1,0 @@
-package com.suraj.service.impl;
-
-import com.suraj.service.FileService;
-
-public class FileServiceImpl implements FileService{
-
-}
